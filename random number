@@ -1,0 +1,12 @@
+import random
+ans = random.randint(1,100)
+for k in range(10):
+  num = int(input('숫자를 맞춰보세요'))
+  print(num)
+  if ans == num:
+    print(f'{num} 정답입니다!')
+    break
+  elif ans < num:
+    print(f'{num} DOWN')
+  elif ans > num:
+    print(f'{num} UP')
